@@ -192,7 +192,7 @@ nav {
   height: 95vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/anime.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("anime.jpg");
   background-size: cover;
   background-position: center;
   color: white;
