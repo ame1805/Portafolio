@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#inicio">Portafolio</a>
+          </div>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#cuadernos" class="nav-link">Cuadernos</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Bienvenido a mi Portafolio</h1>
+          <p>Desarrollador Web & Diseñador Creativo</p>
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn btn-secondary">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <div class="name-section">
+              <h1 class="main-name">Piero Alessandro Isidro Yaranga</h1>
+              <h2 class="professional-title">Desarrollador Web</h2>
+              <h3 class="specialization">Ingeniería de Sistemas</h3>
+
+              <div class="mission-text">
+                <p>
+                  Soy un desarrollador web con conocimientos en PHP, HTML, CSS y
+                  JavaScript, lo que me permite construir sitios web dinámicos,
+                  responsivos y centrados en la experiencia del usuario. Me
+                  apasiona crear soluciones funcionales y visualmente
+                  atractivas, combinando el lado del servidor con un diseño
+                  limpio y eficiente en el cliente.
+                </p>
+              </div>
+
+              <div class="contact-info">
+                <div class="contact-item">
+                  <span class="contact-label">E-mail:</span>
+                  <p class="contact-value">piero_isya123@outlook.com</p>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label">Ubicación:</span>
+                  <p class="contact-value">Huancayo, Perú</p>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label">Disponibilidad:</span>
+                  <p class="contact-value">Disponible para proyectos</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-primary" id="download-cv"
+              >Descargar CV</a
+            >
+          </div>
+          <div class="about-img">
+            <div class="profile-image-container">
+              <img src="/ame.jpg" alt="Mi foto" class="profile-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mis Proyectos</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+          <button class="filter-btn" data-filter="app">Aplicaciones</button>
+        </div>
+        <div class="projects-grid">
+          <!-- Los proyectos se cargarán dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="cuadernos" class="notebooks">
+      <div class="container">
+        <div class="section-header">
+          <h2>Cuadernos de Aprendizaje</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="notebooks-nav">
+          <button class="notebook-tab active" data-tab="semanas">
+            Semanas
+          </button>
+          <button class="notebook-tab" data-tab="bibliografia">
+            Bibliografía
+          </button>
+        </div>
+
+        <div class="notebook-content">
+          <!-- Contenido de Semanas -->
+          <div id="semanas" class="tab-content active">
+            <div class="weeks-container">
+              <!-- Las semanas se cargarán dinámicamente -->
+            </div>
+          </div>
+
+          <!-- Contenido de Bibliografía -->
+          <div id="bibliografia" class="tab-content">
+            <div class="bibliography-content">
+              <h3>Referencias y Recursos</h3>
+              <div class="bibliography-list">
+                <!-- La bibliografía se cargarán dinámicamente -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mis Habilidades</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="skills-content">
+          <div class="skills-left">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <p>HTML5</p>
+                  <p>90%</p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <p>CSS3</p>
+                  <p>85%</p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <p>JavaScript</p>
+                  <p>80%</p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <p>PHP</p>
+                  <p>75%</p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <p>MySQL</p>
+                  <p>70%</p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-right">
+            <h3>Otras Habilidades</h3>
+            <div class="other-skills">
+              <div class="skill-tag">Diseño Responsivo</div>
+              <div class="skill-tag">UX/UI</div>
+              <div class="skill-tag">SEO</div>
+              <div class="skill-tag">Git</div>
+              <div class="skill-tag">Photoshop</div>
+              <div class="skill-tag">Figma</div>
+              <div class="skill-tag">WordPress</div>
+              <div class="skill-tag">Bootstrap</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contáctame</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Ubicación</h3>
+                <p>Huancayo, Perú</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>E-mail</h3>
+                <p>piero_isya123@outlook.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Teléfono</h3>
+                <p>+51 960918784</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/alessandro-isidro-1b590525a"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/ame1805"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="procesar.php" method="POST" id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Tu Nombre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Tu Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="asunto"
+                  id="asunto"
+                  placeholder="Asunto"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  placeholder="Tu Mensaje"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 - Piero Alessandro Isidro Yaranga. Todos los derechos
+            reservados.
+          </p>
+          <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#cuadernos">Cuadernos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal para detalles de proyectos -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
