@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "HTML BÁSICO",
       description: "Documentación básica sobre HTML y sus elementos.",
       type: "Documentación",
-      url: "pdfs/HTML-BASICO.pdf",
+      url: "HTML-BASICO.pdf",
     },
     {
       title: "HTML AVANZADO",
@@ -131,31 +131,31 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "JavaScript",
       description: "Documentación moderna de JavaScript desde lo básico hasta lo avanzado.",
       type: "Documentación",
-      url: "pdfs/JAVASCRIPT.pdf",
+      url: "JAVASCRIPT.pdf",
     },
     {
       title: "CSS BASICO",
       description: "Dcoumentación de CSS básica para familiarizarse con el entorno y sus principales funciones",
       type: "Documentación",
-      url: "pdfs/CSS-AVANZADO.pdf",
+      url: "CSS-AVANZADO.pdf",
     },
     {
       title: "CSS AVANZADO",
       description: "Dcoumentación de CSS avanzado para el mejor manejo de estilos dentro de una página",
       type: "Documentación",
-      url: "pdfs/CSS-AVANZADO.pdf",
+      url: "CSS-AVANZADO.pdf",
     },
     {
       title: "CSS CON BOOTSTRAP",
       description: "Uso de CSS con Bootstrap, se muestra el uso, las ventajas y ejercicios prácticos",
       type: "Documentación",
-      url: "pdfs/CSS-BOOTSTRAP.pdf",
+      url: "CSS-BOOTSTRAP.pdf",
     },
     {
       title: "TAILWIND CSS",
       description: "Uso de Tailwind con CSS que acelera el diseño web con clases utilitarias listas para usar",
       type: "Documentación",
-      url: "pdfs/Tailwind-CSS.pdf",
+      url: "Tailwind-CSS.pdf",
     },
   ]
 
@@ -481,7 +481,7 @@ if (downloadCvButton) {
     e.preventDefault();
 
     // URL directa del archivo CV
-    const cvUrl = "pdfs/CV.pdf"; // reemplaza con la ruta real
+    const cvUrl = "CV.pdf"; // reemplaza con la ruta real
 
     const link = document.createElement("a");
     link.href = cvUrl;
